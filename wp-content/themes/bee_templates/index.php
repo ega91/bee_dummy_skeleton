@@ -22,11 +22,9 @@
     <div id="headers">
 		<?php include ('wp-content/themes/bee_templates/header.php'); ?>
     </div>
-
     <div id="content">
 		<?php include ('wp-content/themes/bee_templates/content.php'); ?>
     </div>
-
     <div id="footer">
         <?php include ('wp-content/themes/bee_templates/footer.php'); ?>
     </div>

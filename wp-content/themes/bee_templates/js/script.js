@@ -4,45 +4,68 @@ const nextButton = document.querySelector('.next-button');
 const carouselImages = document.querySelector('.carousel');
 const carouselImageWidth = carouselImages.clientWidth;
 
-let currentImageIndex = 0;
-
-prevButton.addEventListener('click', () => {
-  currentImageIndex = (currentImageIndex === 0) ? carouselImages.childElementCount - 1 : currentImageIndex - 1;
-  carouselImages.style.transform = `translateX(-${currentImageIndex * carouselImageWidth}px)`;
-});
-
-nextButton.addEventListener('click', () => {
-  currentImageIndex = (currentImageIndex === carouselImages.childElementCount - 1) ? 0 : currentImageIndex + 1;
-  carouselImages.style.transform = `translateX(-${currentImageIndex * carouselImageWidth}px)`;
-});
-
-// // Splide JS
-
-// import Splide from '@splidejs/splide';
-// import { AutoScroll } from '@splidejs/splide-extention-auto-scroll';
-// // new Splide( '.splide' ).mount();
-
-// var splide = new Splide('.splide',{
-//   type: 'loop',
-//   autoplay: true,
-//   perPage:  5,
-//   gap: '2rem',
-//   breakpoints:{
-//     1200:{
-//       perPage: 3,
-//       gap: '.7rem',
-//     },
-
-//     800:{
-//       perPage: 2,
-//       gap: '.7rem',
-//     },
-
-//     640:{
-//       perPage: 3,
-//       gap: '.7rem',
-//     },
-//   },
-// });
-
-// splide.mount();
+//carousel auto
+		(function() {
+	
+	function Slideshow( element ) {
+		this.el = document.querySelector( element );
+		this.init();
+	}
+	
+	Slideshow.prototype = {
+		init: function() {
+			this.wrapper = this.el.querySelector( ".carousel" );
+			this.slides = this.el.querySelectorAll( ".slide" );
+			this.index = 0;
+			this.total = this.slides.length;
+			this.timer = null;
+			
+			this.action();
+			this.stopStart();	
+		},
+		_slideTo: function( slide ) {
+			var currentSlide = this.slides[slide];
+			currentSlide.style.opacity = 1;
+			
+			for( var i = 0; i < this.slides.length; i++ ) {
+				var slide = this.slides[i];
+				if( slide !== currentSlide ) {
+					slide.style.opacity = 0;
+				}
+			}
+		},
+		action: function() {
+			var self = this;
+			self.timer = setInterval(function() {
+				self.index++;
+				if( self.index == self.slides.length ) {
+					self.index = 0;
+				}
+				self._slideTo( self.index );
+				
+			}, 3000);
+		},
+		stopStart: function() {
+			var self = this;
+			self.el.addEventListener( "mouseover", function() {
+				clearInterval( self.timer );
+				self.timer = null;
+				
+			}, false);
+			self.el.addEventListener( "mouseout", function() {
+				self.action();
+				
+			}, false);
+		}
+		
+		
+	};
+	
+	document.addEventListener( "DOMContentLoaded", function() {
+		
+		var slider = new Slideshow( "#slider-utama" );
+		
+	});
+	
+	
+})();
