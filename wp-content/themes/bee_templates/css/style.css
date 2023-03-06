@@ -93,7 +93,7 @@ body {
     color: red;
     text-align: center;
     padding: 0px;
-    height: 5cm;
+    height: 3.2cm;
     position: relative;
     display: block;
     bottom: 0;
@@ -132,6 +132,86 @@ a:hover {
     text-decoration: underline;
 }
 
+/*This is for Banner Stylesheet */
+
+.flex-banner{
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: slategrey;
+  width: 97%;
+  height: 170px;;
+  position: relative;
+  padding: 0;
+  z-index: 0;
+  top: 5px;
+  margin-bottom: 100px;
+
+}
+
+/* .flex-banner > div {
+  background-color: transparent;
+  width: 100%;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+} */
+
+#banner-ornamen-1{
+  background-color: transparent;
+  display: flex;
+  width: 10%;
+  margin-left: 10px;
+  text-align: left;
+}
+
+#banner-illustrasi{
+  background-color: transparent;
+  display: flex;
+  width: 15%;
+  margin-top: 10px;
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+#banner-info{
+  background-color: transparent;
+  display: flex;
+  width: 25%;
+  margin-left: 10px;
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.info-block-button{
+  background-color: transparent;
+  display: flex;
+  width: 10%;
+  margin-left: 10px;
+  text-align: right;
+  line-height: 43px;
+  font-size: 21px;
+  margin-top: 68px;
+  margin-bottom: 68px;
+}
+
+#banner-ornamen-2{
+  background-color: transparent;
+  display: flex;
+  width: 20%;
+  margin-left: 10px;
+  text-align: right;
+}
+
+#banner-ornamen-3{
+  background-color: transparent;
+  display: flex;
+  width: 20%;
+  margin-left: 10px;
+  text-align: left;
+  bottom: 0;
+}
 
 /* This is for Carousel Group stylesheet */
 
