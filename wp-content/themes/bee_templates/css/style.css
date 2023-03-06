@@ -1,0 +1,184 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply styles to the entire page */
+html {
+    font-size: 16px;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #4215e4;
+    background-color: #ffffff;
+}
+
+#headers{
+    background-color: #ffffff;
+    color: black;
+    text-align: center;
+    height: 150px;
+    width: 100 vh;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top:0;
+    z-index: 1;
+
+}
+
+#headers img {
+    position: fixed;
+    top: 45px;
+    left: 68px;
+    width: auto;
+    height: auto;
+    object-fit: cover; /* Stretch the image to cover the entire container */
+    z-index: 1;
+  }
+
+  #headers p{
+    position: fixed;
+    color: #007bff;
+    background-color: transparent;
+    font-size: 1.7rem;
+    font-weight: bold;
+    top: 100px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    
+  }
+
+  nav,headers{
+    position: fixed;
+    color: black;
+    font-size: medium;
+    font-weight: lighter;
+    top: 65px;
+    right: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  a,tr,nav.homemenu{
+    margin-right: 8px;
+    z-index: 0;
+  }
+
+
+#content{
+    color: #4215e4;
+    background-color: #ffffff;
+    text-align: center;
+    position:relative;
+    top: 150px;
+    right:0;
+    bottom:0;
+    left:0;
+    z-index: 0;
+}
+
+#footer{
+    background-color: grey;
+    color: red;
+    text-align: center;
+    padding: 10px;
+    height: 2cm;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+/* Headings */
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    /* margin-top: 0px;
+    margin-bottom: 1rem; */
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* Links */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* This is for Carousel Group stylesheet */
+
+.content {
+  max-width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.carousel {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.slide {
+  flex: 0 0 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide img {
+  width: 100%;
+}
+
+.prev-button, .next-button {
+    position: absolute;
+    top: 32%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+.prev:hover,
+.next:hover {
+  opacity: 0.5;
+}
+
+.prev-button {
+  left: 0;
+}
+
+.next-button {
+  right: 0;
+}
