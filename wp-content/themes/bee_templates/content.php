@@ -22,4 +22,7 @@
   <div id="content">
 		<?php include ('wp-content/themes/bee_templates/brandrecognition_flexbox.php'); ?>
   </div>
+  <div id="content">
+		<?php include ('wp-content/themes/bee_templates/cardbox_information-flexbox.php'); ?>
+  </div>
 </div>
