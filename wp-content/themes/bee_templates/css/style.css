@@ -148,15 +148,6 @@ a:hover {
 
 }
 
-/* .flex-banner > div {
-  background-color: transparent;
-  width: 100%;
-  margin: 10px;
-  text-align: center;
-  line-height: 75px;
-  font-size: 30px;
-} */
-
 #banner-ornamen-1{
   background-color: transparent;
   display: flex;
@@ -211,6 +202,46 @@ a:hover {
   margin-left: 10px;
   text-align: left;
   bottom: 0;
+}
+
+#brand-container{
+  background-color:aliceblue;
+  border-image: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  line-height: 17px;
+  width: 100%;
+  position: relative;
+  padding: 12px;
+}
+
+.brand-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.brand-row1{
+  display: flex;
+  text-align: center;
+}
+
+.brand-row2{
+  display: flex;
+  text-align: center;
+}
+
+.brand-row3{
+  display: flex;
+  text-align: center;
+}
+
+#child-brand{
+  width: 11%;
+  padding: 43px;
 }
 
 /* This is for Carousel Group stylesheet */
@@ -281,7 +312,6 @@ a:hover {
 .next-button {
   right: 0;
 }
-
 
 /* Splider CSS */
 /* Set height and width of carousel */

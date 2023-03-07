@@ -19,4 +19,7 @@
   <div id="content">
 		<?php include ('wp-content/themes/bee_templates/laman_support_banner.php'); ?>
   </div>
+  <div id="content">
+		<?php include ('wp-content/themes/bee_templates/brandrecognition_flexbox.php'); ?>
+  </div>
 </div>
