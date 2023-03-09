@@ -26,6 +26,9 @@
 		<?php include ('wp-content/themes/bee_templates/cardbox_information-flexbox.php'); ?>
   </div>
   <div id="content">
-        <?php include ('wp-content/themes/bee_templates/knowledge_splide_flex.php'); ?>
-    </div>
+    <?php include ('wp-content/themes/bee_templates/knowledge_splide_flex.php'); ?>
+  </div>
+  <div id="content">
+    <?php include ('wp-content/themes/bee_templates/cardnews_tailwindsplider.php'); ?>
+  </div>
 </div>
