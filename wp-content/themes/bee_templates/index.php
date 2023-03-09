@@ -29,6 +29,7 @@
         <?php include ('wp-content/themes/bee_templates/footer.php'); ?>
     </div>
 
+
 </body>
 </html>
 

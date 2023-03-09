@@ -116,19 +116,19 @@
         <p>Here are our updates of the events related to BINUS University</p>
         <table cellpadding="0" cellspacing="0" style="margin-bottom: 0px;">
             <tr>
-                <td><img style="width:50%; height:auto" src="wp-content/themes/bee_templates/assets/icon/block-header-3d-calendar.svg"></td>
+                <td><img style="width:32%; height:auto" src="wp-content/themes/bee_templates/assets/icon/block-header-3d-calendar.svg"></td>
                 <td><article>
                 <h4 style="text-align:left; font-size:21px; margin-left:10px;">Introduction to Model-Agnostic Meta-Learning<h4>
             </article><hr/></td>
             </tr>
             <tr>
-                <td><img style="width:50%; height:auto" src="wp-content/themes/bee_templates/assets/icon/block-header-3d-calendar.svg"></td>
+                <td><img style="width:32%; height:auto" src="wp-content/themes/bee_templates/assets/icon/block-header-3d-calendar.svg"></td>
                 <td><article>
                 <h4 style="text-align:left; font-size:21px; margin-left:10px;">Cyber Security for Technopreneurship<h4>
             </article><hr/></td>
             </tr>
             <tr>
-                <td><img style="width:50%; height:auto" src="wp-content/themes/bee_templates/assets/icon/block-header-3d-calendar.svg"></td>
+                <td><img style="width:32%; height:auto" src="wp-content/themes/bee_templates/assets/icon/block-header-3d-calendar.svg"></td>
                 <td><article>    
                 <h4 style="text-align:left; font-size:21px; margin-left:10px;">Industrial Sharing: Entrepreneur<h4>
                 </article></td>

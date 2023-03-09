@@ -335,7 +335,7 @@ a:hover {
 
 /* Style the pagination dots */
 .splide__pagination__page {
-  background-color: #000;
+  background-color: #abb8c3;
   opacity: 0.5;
 }
 
@@ -494,4 +494,31 @@ a:hover {
   align-items: center;
   width: 50 px;
   height: 662,5px;
+}
+
+/* Mini Cards for Knowledges  */
+
+.mc_knowledge{
+  background-color: #abb8c3;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  width: 200px;
+  height: 150px;
+}
+
+.mc_knowledge h5{
+  margin-top: 0;
+}
+
+.mc_knowledge p{
+  margin-bottom: 0;
+}
+
+.mc_knowledge img{
+  align-content: center;
+}
+
+.card-lightgrey{
+  background-color:#abb8c3;
 }
