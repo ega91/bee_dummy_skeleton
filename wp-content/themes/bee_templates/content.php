@@ -34,4 +34,7 @@
   <div id="content">
     <?php include ('wp-content/themes/bee_templates/foundationcard_flex.php'); ?>
   </div>
+  <div id="content">
+    <?php include ('wp-content/themes/bee_templates/stories.php'); ?>
+  </div>
 </div>
