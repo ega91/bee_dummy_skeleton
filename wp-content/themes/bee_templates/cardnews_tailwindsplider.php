@@ -113,7 +113,7 @@
             </div>
         </div>
     </div>
-    <a href="https://binus.ac.id/program" style="color:black;" >View More&#62;</a>
+    <p style="color:black; padding-bottom:15px;"><a href="https://binus.ac.id/program" >View More&#62;</a></p>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
