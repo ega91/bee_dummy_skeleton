@@ -89,11 +89,12 @@ body {
 }
 
 #footer{
-    background-color: grey;
-    color: red;
-    text-align: center;
+    background-color: #abb8c3;
+    color: #5e5e5e;
+    text-align: left;
     padding: 0px;
-    height: 3.2cm;
+    height: auto;
+    max-height: 226,4px;
     position: relative;
     display: block;
     bottom: 0;
@@ -106,8 +107,6 @@ body {
 h1 {
     font-size: 2rem;
     font-weight: bold;
-    /* margin-top: 0px;
-    margin-bottom: 1rem; */
 }
 
 h2 {
@@ -121,6 +120,7 @@ h3 {
     font-weight: bold;
     margin-bottom: 1rem;
 }
+
 
 /* Links */
 a {
@@ -457,13 +457,19 @@ a:hover {
 }
 
 .horizontal-flex{
+  display: flex;
   flex-direction: row;
   padding: .75em;
 }
 
 .vertical-flex{
+  display: flex;
   flex-direction: column;
   padding: .75em;
+}
+
+.flex-space{
+  margin-right: 11px;
 }
 
 .info-card-button {
